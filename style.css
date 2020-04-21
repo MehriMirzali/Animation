@@ -1,0 +1,53 @@
+#bg {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    animation-name: bg;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+@keyframes bg{
+    0% {background-color: #00BFFF;}
+    100%{background-color: #05052e;}
+}
+#buildings{
+    width: 900px;
+    transform: translate(-50px,90px);
+}
+#moon{
+    width: 40px;
+    transform: translate(550px,-360px);
+    z-index: 6;
+    animation-duration: 9s;
+    animation-name: sh2;
+    animation-iteration-count: infinite;
+}
+@keyframes sh2{
+    0%   { transform: translate(2000px,-2000px); opacity: .5;}
+    100%{opacity: 0.9;}
+  }
+#star{
+    width: 780px;
+    height: 300px;
+    transform: translate(0,-600px);
+    z-index: 2;
+    animation-name: star;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+@keyframes star{
+ 0%{opacity: 0;}
+ 100%{opacity: 1;}
+}
+#person{
+    width: 45px;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: person;
+}
+@keyframes person{
+    from{transform: translate(700px,-460px);
+    opacity: 1;}
+    to{transform: translate(-15px,-460px); opacity: .7;}
+}
